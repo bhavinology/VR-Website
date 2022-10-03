@@ -42,3 +42,40 @@ body {
   border: 2px solid white;
   padding: 15px 35px;
 }
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.info-img-container > img {
+  width: 650px;
+}
+
+.info-text-container {
+  margin-left: -7rem;
+  background-color: white;
+  padding: 20px 30px;
+  height: max-content;
+  width: max-content;
+}
+
+.info-text-container > h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  padding-bottom: 15px;
+}
+.info-text-container > p {
+  color: hsl(0, 0%, 41%);
+}
