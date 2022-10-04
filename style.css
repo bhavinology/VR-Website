@@ -180,7 +180,7 @@ body {
 }
 
 .footer-menu {
-  margin-right: 44rem;
+  margin-right: 42rem;
   margin-left: 10px;
 }
 
@@ -189,4 +189,8 @@ body {
   color: white;
   font-weight: 400;
   padding-right: 5px;
+}
+
+.copyright {
+  margin-left: 15px;
 }
