@@ -145,3 +145,47 @@ body {
 .grid-item-8 {
   background-image: url("./images/desktop/image-fisheye.jpg");
 }
+
+.footer-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 25vh;
+  padding: 20px 20px;
+}
+
+.flex-row1-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row1-center > img {
+  margin-right: 50rem;
+  margin-left: 10px;
+}
+
+.social-section > a > img {
+  padding-right: 10px;
+}
+
+.flex-row2-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu {
+  margin-right: 44rem;
+  margin-left: 10px;
+}
+
+.footer-menu > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding-right: 5px;
+}
