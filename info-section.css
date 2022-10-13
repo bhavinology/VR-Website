@@ -1,0 +1,134 @@
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.info-img-container > img {
+  width: 650px;
+}
+
+.info-text-container {
+  margin-left: -7rem;
+  background-color: white;
+  padding: 20px 30px;
+  height: max-content;
+  width: max-content;
+}
+
+.info-text-container > h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  padding-bottom: 15px;
+}
+.info-text-container > p {
+  color: hsl(0, 0%, 41%);
+}
+
+.creations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.creations > h1 {
+  font-size: 60px;
+  font-weight: 300;
+  color: black;
+}
+.creations > button {
+  background: white;
+  border: 2px solid black;
+  outline: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* Styles for responsiveness */
+
+.info-img-container-mobile {
+  display: none;
+}
+.creation-btn-mobile {
+  display: none;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    overflow-x: hidden;
+  }
+
+  .info-section {
+    display: block;
+    margin: 10px auto;
+  }
+  .info-img-container {
+    display: none;
+  }
+  .info-img-container-mobile {
+    display: block;
+    margin: 80px auto 40px auto;
+  }
+  .info-img-container-mobile > img {
+    width: 100%;
+  }
+  .info-text-container {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .info-text-container > h1 {
+    font-size: 35px;
+    /* text-align: center; */
+  }
+  .info-text-container > p {
+    width: 250px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  .creations {
+    display: block;
+  }
+  .creations > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .creations > button {
+    display: none;
+  }
+  .creation-btn-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .creation-btn-mobile > button {
+    background: white;
+    border: 2px solid black;
+    outline: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+  }
+}
