@@ -16,6 +16,20 @@
     <title>VR Website</title>
   </head>
   <body>
+    <div class="mobile-nav" id="mobile-nav" >
+      <div class="mobile-header">
+        <img src="./images/logo.svg" class="logo" alt="logo" />
+        <div class="menu-close" onclick="toggleNav()">
+          <button>
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+      </div>
+      <a href="#" class="mob-nav-item">Home</a
+      ><a href="" class="mob-nav-item">About</a
+      ><a href="" class="mob-nav-item">Services</a
+      ><a href="" class="mob-nav-item">Contact</a>
+    </div>
     <header class="header-section">
       <nav class="navbar">
         <img src="./images/logo.svg" alt="VR logo" />
@@ -26,7 +40,7 @@
           <a href="#">Products</a>
           <a href="#">Support</a>
         </div>
-        <div class="ham-btn">
+        <div class="ham-btn" onclick="toggleNav()">
           <button>
             <i class="fa fa-reorder"></i>
           </button>
@@ -130,5 +144,16 @@
       </div>
       <p class="copyright-footer">&copy;  Made by Bhavin Patel</p>
     </div>
+    <script>
+      function toggleNav(){
+        const ele= document.getElementById('mobile-nav')
+
+        if(ele.classList.contains('mobile-nav-open')){
+          ele.classList.remove('mobile-nav-open')
+        }else{
+          ele.classList.add('mobile-nav-open')
+        }
+      }
+    </script>
   </body>
 </html>
